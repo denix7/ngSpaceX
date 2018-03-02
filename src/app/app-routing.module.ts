@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { LaunchesComponent} from './launches/launches.component'
+import { patch } from 'webdriver-js-extender';
+const routes: Routes = [//3configuramos rutas
+  {
+    path: '',
+    component: LaunchesComponent
+  }
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

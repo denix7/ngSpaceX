@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<div><!-->4 creamos el html<-->
+  <h2>SpaceX Launches</h2>
+  <div *ngIf="launches.length > 0">
+    <ul>
+      <li *ngFor="let launch of launches">{{launch.rocket.rocket_name}}</li>
+    </ul>
+  </div>
+</div>
+
+<!-->7 interpolamos atributos y usamos pipes<-->
+{{launches | json}}
