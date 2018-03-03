@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { LaunchesComponent } from './launches/launches.component';
+import { SpacexService } from './spacex.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -14,9 +17,10 @@ import { LaunchesComponent } from './launches/launches.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SpacexService],//configuramos el provider , ya podemos utilizar el servicio desde el componente
   bootstrap: [AppComponent]
 })
 export class AppModule { }
