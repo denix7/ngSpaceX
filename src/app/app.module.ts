@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { LaunchesComponent } from './launches/launches.component';
 import { SpacexService } from './spacex.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LatestLaunchComponentComponent } from './latest-launch-component/latest-launch-component.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LaunchesComponent
+    LaunchesComponent,
+    LatestLaunchComponentComponent
   ],
   imports: [
     BrowserModule,

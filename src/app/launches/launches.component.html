@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <div><!-->4 creamos el html<-->
   <h2>SpaceX Launches</h2>
-  <table class="table"></table>
   <div *ngIf="launches.length > 0">
     <ul>
-      <li *ngFor="let launch of launches">{{launch.rocket.rocket_name}}</li>
+      <li *ngFor="let launch of launches ">{{launch.rocket.rocket_name}} {{launch.launch_date_utc | date}}
+      </li>
     </ul>
   </div>
   <div *ngIf="launches.length === 0">

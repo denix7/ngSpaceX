@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Launch} from '../model/launch';//importamos el launch
-import { setTimeout } from 'timers';
+//import { setTimeout } from 'timers';
 import { SpacexService } from '../spacex.service';
 
 @Component({
