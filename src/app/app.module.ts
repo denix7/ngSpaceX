@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LaunchesComponent } from './launches/launches.component';
-import { SpacexService } from './spacex.service';
+import { LaunchesComponent } from './components/launches/launches.component';
+import { SpacexService } from './components/spacex.service';
 import { HttpClientModule } from '@angular/common/http';
-import { LatestLaunchComponentComponent } from './latest-launch-component/latest-launch-component.component';
+import { LatestLaunchComponentComponent } from './components/latest-launch-component/latest-launch-component.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -15,7 +17,9 @@ import { LatestLaunchComponentComponent } from './latest-launch-component/latest
   declarations: [
     AppComponent,
     LaunchesComponent,
-    LatestLaunchComponentComponent
+    LatestLaunchComponentComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

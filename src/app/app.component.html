@@ -1,2 +1,33 @@
-<!-->4<-->
-<router-outlet></router-outlet>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<body>
+    <div>
+        <div>
+          <div>
+            <a [routerLink]="['/launches']" class="navbar-brand">{{ title }}</a>
+          </div>
+
+          <ul class="nav justify-content-center">
+            <li>
+              <a [routerLink]="['/launches']">
+                <span class="glyphicon glyphicon-home"></span>
+                Launches</a>
+            </li>
+            <li>
+              <a [routerLink]="['/latest']">
+                <span class="glyphicon glyphicon-star"></span>
+                Latest</a>
+            </li>
+            <li>
+              <a [routerLink]="['/contact']"><span class="glyphicon glyphicon-comment"></span>
+                Contact</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    
+    <div class="col-lg-8 col-lg-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+    
+  </body>
+    <router-outlet></router-outlet>
